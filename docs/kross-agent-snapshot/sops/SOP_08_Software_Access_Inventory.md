@@ -28,6 +28,7 @@ Every firm access inventory must cover:
 4. Tax Mogul Client Portal / Preparer Workspace
 5. Firm-selected meeting recorder
 6. SBTPG or Refund Advantage
+7. AI/model provider subscription or authorization
 
 ## Master Access Matrix
 
@@ -38,6 +39,7 @@ Every firm access inventory must cover:
 | Tax Mogul Client Portal / Preparer Workspace | Firm-scoped Kross user and/or backend service access | Yes for UI login | To be confirmed | Kross may access only that firm's portal/workspace and authorized client records. |
 | Meeting recorder | API/webhook/OAuth/export access | Maybe | Usually yes | Platform must provide reliable transcript access for automation. |
 | SBTPG or Refund Advantage | Login credentials/reporting user | Yes | No unless later confirmed | Kross may pull reports only; it must not move money or change settings. |
+| AI/model provider | Firm-owned subscription/provider authorization | No, unless provider requires it | Yes or OAuth | Kross may use only the model provider account approved for that firm. Returns and Revenue Office may use Sydne/Tax Mogul access as the pilot exception. |
 
 ## Access Inventory Fields
 
@@ -53,6 +55,9 @@ Record for each system:
 - credential storage location
 - MFA method
 - permission level
+- provider/model name, if applicable
+- account owner/payer, if applicable
+- usage/cost owner, if applicable
 - approved actions
 - restricted actions
 - setup date
@@ -89,6 +94,25 @@ If a dedicated Kross Agent API key or service access exists for that firm later,
 
 Kross Agent should not assume an access method. Kross uses only the access method documented for that firm.
 
+## AI / Model Provider Record
+
+For future firms, the access inventory must document the firm's own model provider access.
+
+Record:
+
+- provider name
+- approved model or model family
+- account owner/payer
+- access method: OAuth, API key, provider token, or approved session
+- credential storage location
+- usage/cost owner
+- rate limits or spend limits, if configured
+- offboarding/revocation steps
+
+Do not record API key values, OAuth tokens, passwords, recovery codes, or billing card details in this SOP.
+
+Returns and Revenue Office may use Sydne/Tax Mogul provider access as a pilot exception. Any future Tax Mogul-managed AI usage for other firms must be tied to an approved AI-included offer/pricing tier and usage monitoring.
+
 ## Acceptance Criteria
 
 This SOP is working when:
@@ -98,3 +122,4 @@ This SOP is working when:
 - Credentials are referenced by secure storage location, not written in the SOP.
 - Kross is restricted to the approved firm and approved tools.
 - Tax software access is limited to the Tax Mogul white-label TaxSlayer URL unless intentionally expanded later.
+- Kross uses only the approved model provider account for the active firm.

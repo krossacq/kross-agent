@@ -92,6 +92,7 @@ Each firm should have a Kross Agent access profile that documents:
 - Permission level
 - MFA method
 - Credential storage location
+- AI/model provider, account owner/payer, and usage/cost owner when applicable
 - Whether Kross can act automatically or only with approval
 - Emergency lockout/offboarding steps
 
@@ -114,12 +115,15 @@ Kross Agent needs access in these categories.
 | File/document storage | Read/download access | Review uploaded tax documents needed for data entry. |
 | Slack/Telegram | Bot/app access | Receive preparer instructions and provide updates. |
 | Agent memory/knowledge base | Read/write access | Store firm rules, client summaries, SOP outcomes, and learned preferences. |
+| AI/model provider | Firm-owned subscription/provider authorization by default | Power Kross Agent's reasoning, drafting, summarization, and tool use. Returns and Revenue Office may use Sydne/Tax Mogul provider access as the pilot exception. |
 
 ### Access Boundaries
 
 Kross Agent should have the minimum permissions required to complete its assigned work.
 
 Kross Agent should not have unrestricted owner/admin access unless there is no alternative and the owner explicitly approves it.
+
+For future firms, Kross Agent should be powered by that firm's own approved model provider account unless Tax Mogul Bureau has explicitly sold and documented an AI-included usage tier.
 
 Kross Agent should not:
 
@@ -132,6 +136,7 @@ Kross Agent should not:
 - File or transmit returns.
 - Delete client records or documents.
 - Export bulk client data unless explicitly approved.
+- Use another firm's model provider account, API key, OAuth session, credits, subscription, or billing plan.
 
 ### Credential Handling
 

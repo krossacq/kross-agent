@@ -15,6 +15,8 @@ Kross Agent should not execute this SOP independently.
 
 During the onboarding call, help the firm create the Kross Agent operational identity and connect the software Kross needs to do its work.
 
+For future firms, this also includes confirming the firm's own AI/model subscription or provider access. Returns and Revenue Office may use Sydne/Tax Mogul's provider access as the pilot exception.
+
 ## Human-Led Call Rule
 
 The onboarding call is led by a human Tax Mogul Bureau representative.
@@ -57,6 +59,7 @@ Do not use a preparer's personal email as the default Kross identity unless the 
 | Tax Mogul Client Portal / Preparer Workspace | Firm-scoped Kross user and/or backend service access | Yes for UI login; API/service key only if the existing app supports it | To be confirmed after app inspection | Kross can access only that firm's specific Tax Mogul Portal workspace. Need developer inspection to confirm whether agent API/service-role access exists or must be built. |
 | SBTPG or Refund Advantage | Login credentials / reporting user | Yes | No, unless a partner API is later confirmed | Kross needs credentials for the firm's selected bank product platform. Use reporting-only permissions if available. |
 | Meeting recorder: Fathom, Fireflies, Granola, or similar | API/webhook access required for production automation | Maybe | Yes, if the platform uses API keys/OAuth | Firm admin may choose the recorder, but it must support API/webhook/transcript export access for Kross automation. |
+| AI/model provider: OpenAI, Codex, OpenRouter, Nous Portal, or approved equivalent | Firm-owned subscription/provider authorization | No, unless provider uses agent email | Yes or OAuth, depending on provider | Future firms should pay for and authorize their own model access. Do not use one firm's provider account for another firm. Tax Mogul-managed usage requires a separate approved AI-included plan. |
 
 ## System-by-System Call Steps
 
@@ -209,6 +212,23 @@ Recommended:
 - If the platform cannot provide reliable API/webhook/export access, it should not be treated as supported for automated Kross meeting memory yet.
 - Manual upload can be used as a temporary fallback, but not as the preferred production automation.
 
+### 6. AI / Model Provider Subscription
+
+During onboarding:
+
+1. Confirm which provider will power the firm's Kross Agent.
+2. Confirm who owns and pays for the provider account.
+3. Confirm the approved model or model family.
+4. Confirm whether setup uses OAuth login, API key, provider token, or another approved method.
+5. Complete authorization with the firm owner/admin present.
+6. Store credentials only in the approved secure credential manager or server environment location.
+7. Record the credential storage location, not the secret value.
+8. Confirm the firm understands whether model usage is paid by the firm or included in a separate Tax Mogul plan.
+
+Default:
+- Future firms provide/pay for their own AI/model subscription.
+- Returns and Revenue Office may use Sydne/Tax Mogul provider access as the pilot exception.
+
 ## Access Decision Rules
 
 Use API key/private integration when:
@@ -240,6 +260,7 @@ For the first version of Kross Agent:
 | Tax Mogul Client Portal | Firm-scoped Kross user and/or backend service access; developer must confirm current API/service-role support. |
 | SBTPG / Refund Advantage | Agent email login with reporting-only permissions where possible. |
 | Meeting recorder | Firm-selected platform with API/webhook/export access. |
+| AI/model provider | Firm-owned subscription/provider authorization for future firms; Tax Mogul/Sydne provider access only for Returns and Revenue Office pilot or approved AI-included tier. |
 
 ## Research Notes
 

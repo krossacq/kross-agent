@@ -22,6 +22,7 @@ When access should end, Kross must be removed from every connected system.
 - meeting recorder platform
 - SBTPG or Refund Advantage
 - storage/reporting access
+- AI/model provider access
 
 ## Offboarding Workflow
 
@@ -32,8 +33,10 @@ When access should end, Kross must be removed from every connected system.
 5. Revoke bank product reporting login.
 6. Disconnect meeting recorder access.
 7. Archive or secure agentmail account.
-8. Rotate credentials if risk exists.
-9. Log all removals.
+8. Revoke or disconnect model provider OAuth/API access if the firm used a firm-owned provider account.
+9. Remove the firm from any Tax Mogul-managed AI usage pool if applicable.
+10. Rotate credentials if risk exists.
+11. Log all removals.
 
 ## Acceptance Criteria
 

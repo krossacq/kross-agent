@@ -23,6 +23,8 @@ Kross should not go live until access, guardrails, memory scope, and approval fl
 - TaxSlayer access is confirmed
 - meeting recorder transcript access is confirmed
 - SBTPG or Refund Advantage reporting access is confirmed, if applicable
+- AI/model provider access is confirmed for the firm
+- provider account owner/payer and usage/cost owner are documented
 - firm knowledge base has baseline SOPs
 - client visibility rules are tested
 - approval flows are tested

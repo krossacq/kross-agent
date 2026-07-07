@@ -49,6 +49,7 @@ These SOPs are for Tax Mogul Bureau humans or Kross Command support during setup
 | SOP | Status | Priority | Notes |
 | --- | --- | --- | --- |
 | Human onboarding call access checklist | draft | P0 | Human-led call checklist for creating agentmail.to email and confirming required system access. Draft: `HUMAN_SOP_Onboarding_Call_Access_Checklist.md`. |
+| Firm AI/model subscription setup SOP | draft | P0 | Human-led setup for firm-owned model provider access, provider authorization, cost ownership, and pilot exceptions. Draft: `HUMAN_SOP_Firm_AI_Model_Subscription_Setup.md`. |
 | Software access inventory SOP | draft | P0 | Human-maintained record of each firm's approved systems, credentials references, permissions, and offboarding notes. Draft: `SOP_08_Software_Access_Inventory.md`. |
 
 ## Kross Operating Access SOPs
@@ -64,6 +65,7 @@ These SOPs are for Kross Agent after human-led setup is complete.
 | Tax Mogul Portal access SOP | draft | P0 | Kross operating boundaries for firm-scoped portal/workspace access. Draft: `SOP_12_Tax_Mogul_Portal_Access.md`. |
 | Meeting recorder access SOP | draft | P0 | Kross operating boundaries for approved transcript import/access. Draft: `SOP_13_Meeting_Recorder_Access.md`. |
 | SBTPG / Refund Advantage reporting access SOP | draft | P0 | Kross operating boundaries for bank product reporting only. Draft: `SOP_14_Bank_Product_Reporting_Access.md`. |
+| Model provider account boundaries SOP | draft | P0 | Kross operating rule for using only the active firm's approved provider account. Draft: `SOP_61_Model_Provider_Account_Boundaries.md`. |
 
 ## Phase 3: Memory SOPs
 
@@ -160,6 +162,7 @@ Phase 6 defines how Kross responds to organizer completion, updates the Kross Qu
 | Firm launch readiness checklist SOP | draft | P0 | What must be ready before Kross goes live in a firm. Draft: `SOP_58_Firm_Launch_Readiness_Checklist.md`. |
 | Kross Agent testing scenarios SOP | draft | P0 | Test cases Kross must pass before launch. Draft: `SOP_59_Kross_Agent_Testing_Scenarios.md`. |
 | Returns and Revenues Office pilot integration SOP | draft | P0 | Controlled first pilot rollout for Returns and Revenues Office. Draft: `SOP_60_Returns_and_Revenues_Office_Pilot_Integration.md`. |
+| Model provider account boundaries SOP | draft | P0 | Confirms provider ownership, usage/cost owner, cross-firm provider isolation, and pilot exception. Draft: `SOP_61_Model_Provider_Account_Boundaries.md`. |
 
 ## Current Build Status
 

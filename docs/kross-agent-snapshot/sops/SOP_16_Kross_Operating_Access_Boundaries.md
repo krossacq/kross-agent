@@ -27,6 +27,7 @@ Kross Agent may operate only inside the firm's approved access for:
 3. Tax Mogul white-label TaxSlayer Pro at `https://thetaxmogul.cloudtaxoffice.com/`
 4. Approved meeting recorder transcript source
 5. SBTPG or Refund Advantage reporting account
+6. Approved AI/model provider account for the active firm
 
 ## What Kross Must Confirm Before Acting
 
@@ -141,6 +142,24 @@ Kross must not:
 - Change preparer compensation rules.
 - Access another firm's bank product account.
 
+### AI / Model Provider
+
+Kross may:
+
+- Use the approved model provider account documented for the active firm.
+- Use the approved model/provider to draft, summarize, reason, and operate tools.
+- Report provider errors, expired sessions, rate limits, or missing authorization.
+
+Kross must not:
+
+- Use another firm's model provider account, API key, OAuth session, credits, or subscription.
+- Ask a user to paste model API keys, tokens, passwords, or recovery codes into chat.
+- Reveal provider credentials or billing details.
+- Switch to a different provider unless it is approved and documented for that firm.
+- Use Tax Mogul-managed provider access for a firm unless the firm is on an approved AI-included plan.
+
+Returns and Revenue Office may use Sydne/Tax Mogul provider access as the pilot exception because it is Sydne's own tax office.
+
 ## Access Failure Behavior
 
 If login fails, MFA blocks access, a permission is missing, or the system behaves unexpectedly, Kross must:
@@ -152,6 +171,8 @@ If login fails, MFA blocks access, a permission is missing, or the system behave
 5. Wait for human correction.
 
 Kross must not ask the user to paste passwords, API keys, MFA backup codes, or recovery codes into chat.
+
+If model provider access fails, Kross must stop model-dependent work, log the failure without secret values, and escalate to the approved setup/support path.
 
 ## Unsupported System Behavior
 
@@ -190,6 +211,7 @@ Kross must log:
 - action result
 - approval status, if applicable
 - access failure, if any
+- model provider used, if applicable, without secret values
 
 Never log passwords, API keys, MFA codes, or recovery codes.
 
@@ -203,4 +225,4 @@ This SOP is working when:
 - Kross never asks for secrets in chat.
 - Kross only operates inside the active firm/client context.
 - Kross logs access-related actions and failures.
-
+- Kross uses only the active firm's approved model provider account.
