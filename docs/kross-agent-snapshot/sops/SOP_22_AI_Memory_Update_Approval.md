@@ -69,6 +69,20 @@ Recommended statuses:
 9. Rejected update is preserved for audit/history but not used as official memory.
 10. Action is logged.
 
+## What Counts As Approval
+
+Official memory approval must be explicit. A user saying "save it," "looks good," "create it," "mark ready," or "go ahead" is not enough for live client memory unless the approval clearly names the action being approved.
+
+Acceptable approval examples:
+
+- "I approve saving this memory update."
+- "I approve merging this into the client's official memory."
+- "I approve creating these internal tasks from this summary."
+
+If approval is unclear, Kross must ask a confirmation question before saving, merging, or creating official records.
+
+Fake/sample test artifacts may be saved only in a clearly labeled test area and must not be represented as official client memory.
+
 ## Updates That Require Extra Care
 
 Human review is especially important for:
@@ -121,4 +135,3 @@ This SOP is working when:
 - Conflicts are flagged.
 - Rejected updates do not become official memory.
 - Visibility is handled separately from approval.
-
